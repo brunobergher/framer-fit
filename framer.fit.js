@@ -26,8 +26,6 @@ utils.resizeToFit = function() {
     if(content.height > available.height) scales.y = available.height/content.height;
     scale = Math.min(scales.x, scales.y);
 
-    console.log(available, content, scale)
-
     if(scale < 1) {
       document.body.style['-webkit-transform'] = "scale(" + scale + ")";
       document.body.style['-moz-transform'] = "scale(" + scale + ")";
